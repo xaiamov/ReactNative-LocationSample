@@ -310,7 +310,7 @@ public class LocationUpdatesService extends Service {
 
         // PendingIntent to launch app.
         PendingIntent activityPendingIntent = PendingIntent.getActivity(this, 0,
-                new Intent(this, MainActivity.class), 0);
+                new Intent(this, MainActivity.class), PendingIntent.FLAG_IMMUTABLE);
 
         // CharSequence text = Utils.getLocationText(mLocation);
         CharSequence title = "LocationSample is tracking your movement.";
